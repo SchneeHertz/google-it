@@ -42,6 +42,7 @@ Prevent display in the terminal, and save results to a JSON file:
 - [x] *disableConsole* - intended to be used with programmatic use, so that the color-coded search results are not displayed in the terminal (via console.log) when not wanted.
 
 ### Programmatic Use in NodeJS environment
+- *additionalQueryParam* - add additional parameter of query, only for Programmatic Use, see [Google Search Operators](https://moz.com/learn/seo/search-operators).
 
 - [x] something like:
 
@@ -58,7 +59,11 @@ googleIt({'query': 'covfefe irony'}).then(results => {
 const options = {
   'proxy': 'http://localhost:8118'
 };
-googleIt({options, 'query': 'covfefe irony'}).then(results => {
+const additionalQueryParam = {
+  lr: 'lang_zh-CN',
+  cr: 'countryCN'
+}
+googleIt({options, 'query': 'covfefe irony', additionalQueryParam, disableConsole: true}).then(results => {
   // access to results object here
 }).catch(e => {
   // any possible errors that might have occurred (like no Internet connection)
