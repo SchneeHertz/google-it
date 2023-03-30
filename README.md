@@ -4,7 +4,7 @@ A simple library to convert Google search results to JSON output, with an intera
 
 ## Install
 
-`$ npm install --save -g google-it`
+`$ npm install --save -g @schneehertz/google-it`
 
 ## Example Usage
 
@@ -47,7 +47,7 @@ Prevent display in the terminal, and save results to a JSON file:
 - [x] something like:
 
 ```js
-const  googleIt = require('google-it')
+const  googleIt = require('@schneehertz/google-it')
 
 googleIt({'query': 'covfefe irony'}).then(results => {
   // access to results object here
