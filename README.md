@@ -42,7 +42,7 @@ Prevent display in the terminal, and save results to a JSON file:
 - [x] *disableConsole* - intended to be used with programmatic use, so that the color-coded search results are not displayed in the terminal (via console.log) when not wanted.
 
 ### Programmatic Use in NodeJS environment
-- *additionalQueryParam* - add additional parameter of query, only for Programmatic Use, see [Google Search Operators](https://moz.com/learn/seo/search-operators).
+- *additionalQueryParam* - add additional parameter of query, only for Programmatic Use, see [WebSearch Query Parameter Definitions](https://developers.google.com/custom-search/docs/xml_results?hl=en#websearch-query-parameter-definitions).
 
 - [x] something like:
 
